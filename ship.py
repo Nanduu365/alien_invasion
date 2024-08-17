@@ -42,12 +42,6 @@ class Ship (Sprite):
         self.rect.midbottom = self.screen_rect.midbottom
         self.x = float(self.rect.x)
 
-    def fullscreen_update(self,ai):
-        self.screen = ai.screen
-        self.screen_rect = ai.screen.get_rect()
-        self.settings = ai.settings
-
-        self.rect.midbottom = self.screen_rect.midbottom
 
     def blitme(self):
         '''Draw the ship at its current location'''
